@@ -179,13 +179,29 @@ h1.side-header{
 }
 
 .pro-card{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    row-gap: 22px;
+
     background-color:white;
-    padding:15px 25px;
-    margin:15px 50px;
+    padding:15px 28px;
+    margin:15px 75px;
     min-width: 300px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
     border-radius:10px;
-    
+
+    /* position:relative; */
+    border-left:6px solid rgb(0, 128, 255);
+
+}
+
+
+.star-icon{
+    display:flex;
+    justify-content:end;
+    column-gap:12px;
+
 }
 
 
@@ -194,13 +210,24 @@ h1.side-header{
 .adds{
     grid-column:3/4;
     margin-left: 55px;
+    display:grid;
+    grid-template-rows:1fr 1fr;
 }
 
+.ann{
+    grid-row:1/2;
+}
+
+.trend-group{
+    grid-row:2/3;
+}
 
 .anno-card{
+
     background-color: white;
     padding:20px 15px;
-    max-width: 320px;
+    max-width: 340px;
+    max-height: 700px;
     
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -252,7 +279,10 @@ h4{
 .trend-card{
     background-color: white;
     padding:20px 15px;
-    max-width: 320px;
+    max-height:500px;
+
+    max-width: 340px;
+    min-width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius:10px;
 }
